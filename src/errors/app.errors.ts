@@ -3,3 +3,4 @@ export default class AppError extends Error {
     super(message);
   }
 }
+
