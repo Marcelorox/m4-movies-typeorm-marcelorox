@@ -1,3 +1,3 @@
 import errorCheck from "./errorsZod.middlewares";
-
-export { errorCheck };
+import { verifyId } from "./verifyId.middlewares";
+export { errorCheck, verifyId };

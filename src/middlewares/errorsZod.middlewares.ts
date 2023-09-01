@@ -13,7 +13,7 @@ function errorCheck(
   }
 
   if (error instanceof z.ZodError) {
-    return res.status(400).json(error.flatten().fieldErrors);
+    return res.status(400).json({ message: error.flatten().fieldErrors });
   }
 
   console.error(error);
