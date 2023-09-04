@@ -43,10 +43,10 @@ async function updateMovie(movie: Movie, payload: MovieUpdate): Promise<Movie> {
   return updateMovie;
 }
 
-async function deleteMovie(id: Movie): Promise<Movie> {
-  const deleteMovie: Movie = await movieRepositorie.remove(id);
+async function deleteMovie(id: Movie): Promise<void> {
+  await movieRepositorie.remove(id);
 
-  return deleteMovie;
+  // return deleteMovie;
 }
 
 export default { create, read, updateMovie, deleteMovie };

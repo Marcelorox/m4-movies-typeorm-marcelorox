@@ -6,7 +6,6 @@ import { AppError } from "../errors";
 export async function verifyId(
   req: Request,
   res: Response,
-
   next: NextFunction
 ): Promise<void> {
   const searchMovie: Movie | null = await movieRepositorie.findOneBy({
